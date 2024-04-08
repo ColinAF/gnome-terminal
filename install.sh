@@ -36,6 +36,9 @@ set_profile_colors() {
   local fg_color_file=$scheme_dir/fg_color
   local bd_color_file=$scheme_dir/bd_color
 
+  dconfdir=$(echo "$dconfdir" | sed 's:/*$::')
+  profile=$(echo "$profile" | sed 's:/*$::')
+
   if [ "$newGnome" = "1" ]
     then local profile_path=$dconfdir/$profile
 
