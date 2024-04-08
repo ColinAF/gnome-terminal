@@ -10,6 +10,12 @@ You'll need the `dconf` command (if you run a recent Gnome version). In Ubuntu,t
 sudo apt-get install dconf-cli
 ```
 
+You'll also need `dbus-x11`. In Ubuntu, this can be installed by running: 
+
+```bash
+sudo apt-get install dbus-x11
+```
+
 In other distros you'll need to dig around to find it, search your repositories for **dconf** related packages.
 
 After installing dconf, you can clone this repository to your machine.
